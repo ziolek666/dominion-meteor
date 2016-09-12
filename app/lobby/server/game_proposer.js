@@ -26,7 +26,8 @@ GameProposer = class GameProposer {
 
   select_cards() {
     card_list = new CardList(this.exclusions)
-    this.cards = card_list.pull_set()
+    // this.cards = card_list.pull_set()
+    this.cards = card_list.pull_from_history('qT4SmZifZJnSLQXyn')
   }
 
   update_players() {
